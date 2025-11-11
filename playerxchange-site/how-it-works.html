@@ -21,36 +21,29 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/utilities.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body data-theme="dark">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
       <a class="navbar-brand" href="index.html" aria-label="PlayerXChange home">
-        <svg class="brand-logo" width="160" height="40" viewBox="0 0 160 40" role="img" aria-labelledby="px-logo-title px-logo-desc">
+        <svg class="brand-logo" width="44" height="44" viewBox="0 0 44 44" role="img" aria-labelledby="px-logo-title px-logo-desc">
           <title id="px-logo-title">PlayerXChange</title>
-          <desc id="px-logo-desc">Stylized PlayerXChange wordmark with gradient badge</desc>
+          <desc id="px-logo-desc">Gradient badge icon for PlayerXChange</desc>
           <defs>
             <linearGradient id="px-logo-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#0B5FFF"/>
               <stop offset="100%" stop-color="#00D4A6"/>
             </linearGradient>
           </defs>
-          <rect width="40" height="40" rx="12" fill="#0A0F1E"/>
-          <path fill="url(#px-logo-gradient)" d="M20 9.5c5.8 0 10.5 4.7 10.5 10.5S25.8 30.5 20 30.5 9.5 25.8 9.5 20 14.2 9.5 20 9.5Zm0 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm6.8-7.5h11.7v5.5h-6.2v26h-5.5V6Z"/>
-          <text x="54" y="27" font-family="'Inter',system-ui,sans-serif" font-size="20" font-weight="700" fill="#F7FAFF">PlayerXChange</text>
+          <rect width="44" height="44" rx="13" fill="#0A0F1E"/>
+          <path fill="url(#px-logo-gradient)" d="M22 11c6.1 0 11 4.9 11 11s-4.9 11-11 11-11-4.9-11-11 4.9-11 11-11Zm0 4.3a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4Zm7.2-7.8h7v5.4h-3.2v23.8h-3.8V7.5Z"/>
         </svg>
+        <span class="brand-text">PlayerXChange</span>
       </a>
-      <div class="inline-flex items-center gap-3">
-        <button class="btn btn-secondary" type="button" data-theme-toggle aria-pressed="true" aria-label="Toggle dark or light mode">Toggle theme</button>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
-          <span class="sr-only">Toggle navigation</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M2 4h16v2H2zm0 5h16v2H2zm0 5h16v2H2z"/></svg>
-        </button>
-      </div>
       <nav id="primary-navigation" class="primary-nav" data-primary-nav>
         <a class="nav-link" href="athletes.html">Athletes</a>
         <a class="nav-link" href="how-it-works.html">How it Works</a>
@@ -59,6 +52,13 @@
         <a class="nav-link" href="contact.html">Contact</a>
         <a class="btn btn-primary" href="athletes.html">Get Started</a>
       </nav>
+      <div class="navbar-actions">
+        <button class="btn btn-secondary" type="button" data-theme-toggle aria-pressed="true" aria-label="Toggle dark or light mode">Toggle theme</button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+          <span class="sr-only">Toggle navigation</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M2 4h16v2H2zm0 5h16v2H2zm0 5h16v2H2z"/></svg>
+        </button>
+      </div>
     </div>
   </header>
   <main id="main">
