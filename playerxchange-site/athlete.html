@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,13 +61,13 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <div class="container" data-loading>
+  <main id="main" class="page-main" data-ambient>
+    <div class="container" data-loading data-observe data-animate="fade-up">
       <div class="card card-surface-alt">
         <p class="weight-medium">Loading athlete intelligence...</p>
       </div>
     </div>
-    <article class="container hidden" data-athlete-detail>
+    <article class="container hidden" data-athlete-detail data-observe data-animate="slide-left">
       <div class="detail-hero">
         <div class="hero-figure" data-hero-figure></div>
         <div>
@@ -86,26 +86,26 @@
           </div>
         </div>
       </div>
-      <div class="tab-list" role="tablist" aria-label="Athlete sections">
+      <div class="tab-list" role="tablist" aria-label="Athlete sections" data-observe data-animate="fade-up">
         <button class="tab-button" role="tab" aria-selected="true" aria-controls="overview" id="tab-overview">Overview</button>
         <button class="tab-button" role="tab" aria-selected="false" aria-controls="disclosures" id="tab-disclosures">Disclosures</button>
         <button class="tab-button" role="tab" aria-selected="false" aria-controls="perks" id="tab-perks">Perks</button>
       </div>
-      <section id="overview" class="tab-panel" role="tabpanel" tabindex="0">
+      <section id="overview" class="tab-panel" role="tabpanel" tabindex="0" data-observe data-animate="fade-up">
         <h2 class="section-title">Overview</h2>
         <p class="mt-3">The athlete share contract is a compliant digital collectible. Primary sales flow through PlayerXChange escrow with automated athlete royalty splits.</p>
       </section>
-      <section id="disclosures" class="tab-panel" role="tabpanel" hidden>
+      <section id="disclosures" class="tab-panel" role="tabpanel" hidden data-observe data-animate="fade-up">
         <h2 class="section-title">Disclosures</h2>
         <ul class="mt-3" data-athlete-disclosures></ul>
         <p class="mt-4 text-sm">Always reference on-chain metadata and signed disclosures before purchasing. PlayerXChange provides prompts but you are responsible for compliance.</p>
       </section>
-      <section id="perks" class="tab-panel" role="tabpanel" hidden>
+      <section id="perks" class="tab-panel" role="tabpanel" hidden data-observe data-animate="fade-up">
         <h2 class="section-title">Perks &amp; utility</h2>
         <ul class="mt-3" data-athlete-perks></ul>
         <p class="mt-4 text-sm">Perk fulfillment is verified via wallet snapshots and QR codes. Real-world delivery partners can plug in via our API.</p>
       </section>
-      <aside class="card mt-12">
+      <aside class="card mt-12" data-observe data-animate="rise">
         <h2 class="section-title">Compliance notes</h2>
         <ul class="mt-3 text-sm">
           <li>Digital collectibles only. No equity, no profit share, no guaranteed returns.</li>

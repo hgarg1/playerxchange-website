@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,8 +61,8 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="error-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="error-hero container" data-observe data-animate="fade-up">
       <h1>404</h1>
       <p>We lost the ball on this route. Let’s reset the play.</p>
       <a class="btn btn-primary mt-6" href="index.html">Back to home</a>

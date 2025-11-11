@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,13 +61,13 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="page-hero container" data-observe data-animate="fade-up">
       <h1>Terms of Service</h1>
       <p>Last updated: July 2024. These terms outline the rules for using PlayerXChange experiences and products.</p>
     </section>
-    <section class="container">
-      <nav class="table-of-contents" aria-label="Terms contents">
+    <section class="container" data-observe data-animate="slide-right">
+      <nav class="table-of-contents" aria-label="Terms contents" data-observe data-animate="fade-up">
         <h2 class="text-sm uppercase weight-medium">On this page</h2>
         <ol>
           <li><a href="#eligibility">Eligibility</a></li>
@@ -76,19 +76,19 @@
           <li><a href="#liability">Liability</a></li>
         </ol>
       </nav>
-      <div class="legal-section" id="eligibility">
+      <div class="legal-section" id="eligibility" data-observe data-animate="rise">
         <h2>Eligibility</h2>
         <p>You must be at least 18, pass our KYC/AML checks, and comply with your local NIL regulations to access the PlayerXChange marketplace.</p>
       </div>
-      <div class="legal-section" id="marketplace">
+      <div class="legal-section" id="marketplace" data-observe data-animate="rise">
         <h2>Marketplace rules</h2>
         <p>PlayerXChange collectibles are digital access passes, not securities. You may not list counterfeit or unauthorized assets. We reserve the right to suspend accounts for fraud or policy violations.</p>
       </div>
-      <div class="legal-section" id="perks">
+      <div class="legal-section" id="perks" data-observe data-animate="rise">
         <h2>Perk fulfillment</h2>
         <p>Perk inventory, delivery timelines, and redemption mechanics are disclosed in each athlete drop. PlayerXChange may substitute comparable experiences if a listed perk becomes unavailable.</p>
       </div>
-      <div class="legal-section" id="liability">
+      <div class="legal-section" id="liability" data-observe data-animate="rise">
         <h2>Liability</h2>
         <p>PlayerXChange is offered “as-is.” We limit liability to the greater of fees paid in the last 12 months or $100. Some jurisdictions do not allow these limitations—your rights may vary.</p>
       </div>

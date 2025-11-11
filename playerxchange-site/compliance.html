@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,25 +61,25 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="page-hero container" data-observe data-animate="fade-up">
       <h1>Compliance is non-negotiable</h1>
       <p>PlayerXChange runs compliance workflows across every transaction so athletes and athletic departments stay protected.</p>
     </section>
-    <section class="container">
-      <div class="card">
+    <section class="container" data-observe data-animate="slide-left">
+      <div class="card" data-observe data-animate="scale-in">
         <h2 class="section-title">Not a security</h2>
         <p class="mt-3">PlayerXChange collectibles grant access to perks and community utility. They do not represent equity, investment contracts, or financial returns. Pricing and liquidity are market-driven and not guaranteed.</p>
       </div>
-      <div class="card mt-6">
+      <div class="card mt-6" data-observe data-animate="scale-in">
         <h2 class="section-title">KYC / AML</h2>
         <p class="mt-3">We run tiered Know-Your-Customer and anti-money laundering checks during onboarding. Partner banks provide watchlist screening, sanctions checks, and case management.</p>
       </div>
-      <div class="card mt-6">
+      <div class="card mt-6" data-observe data-animate="scale-in">
         <h2 class="section-title">Geofencing</h2>
         <p class="mt-3">Jurisdictional rules differ. We geofence by IP and wallet metadata to honor state or conference-specific NIL policies, with manual override tools for compliance directors.</p>
       </div>
-      <div class="card mt-6">
+      <div class="card mt-6" data-observe data-animate="scale-in">
         <h2 class="section-title">Audit logs</h2>
         <p class="mt-3">Every disclosure, signature, and perk redemption is timestamped with immutable logs. Exports feed directly into university compliance portals.</p>
       </div>

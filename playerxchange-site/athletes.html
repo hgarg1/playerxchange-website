@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,12 +61,12 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="page-hero container" data-observe data-animate="fade-up">
       <h1>Browse featured athletes</h1>
       <p>Select a drop to inspect supply, perks, and disclosures before trading opens.</p>
     </section>
-    <div class="container filter-bar">
+    <div class="container filter-bar" data-observe data-animate="slide-left">
       <label class="search-input" for="athlete-search">
         <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m21 20.29-5.91-5.9A6.71 6.71 0 1 0 6.7 13.4a6.64 6.64 0 0 0 4.09 1.38 6.6 6.6 0 0 0 4.44-1.7l6 5.97ZM6.7 11.1a4.4 4.4 0 1 1 4.4 4.4 4.4 4.4 0 0 1-4.4-4.4Z"/></svg>
         <input id="athlete-search" data-search type="search" name="search" placeholder="Search by name or school" aria-label="Search athletes">
@@ -82,9 +82,9 @@
         <button class="chip" type="button" data-chip data-value="Baseball" aria-pressed="false">Baseball</button>
       </div>
     </div>
-    <section class="container">
+    <section class="container" data-observe data-animate="fade-up">
       <div class="athlete-grid" data-athlete-grid>
-        <article class="athlete-card" data-athlete-card data-name="Jordan Wright" data-school="University of Maryland" data-sport="Basketball">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Jordan Wright" data-school="University of Maryland" data-sport="Basketball">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-jordan-wright-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-jordan-wright-card-title">Jordan Wright stylized illustration</title>
             <defs>
@@ -106,7 +106,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=jordan-wright">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Emily Chen" data-school="Stanford University" data-sport="Swimming">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Emily Chen" data-school="Stanford University" data-sport="Swimming">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-emily-chen-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-emily-chen-card-title">Emily Chen stylized illustration</title>
             <defs>
@@ -128,7 +128,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=emily-chen">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Malik Henderson" data-school="University of Georgia" data-sport="Football">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Malik Henderson" data-school="University of Georgia" data-sport="Football">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-malik-henderson-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-malik-henderson-card-title">Malik Henderson stylized illustration</title>
             <defs>
@@ -150,7 +150,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=malik-henderson">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Sofia Rojas" data-school="UCLA" data-sport="Soccer">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Sofia Rojas" data-school="UCLA" data-sport="Soccer">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-sofia-rojas-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-sofia-rojas-card-title">Sofia Rojas stylized illustration</title>
             <defs>
@@ -172,7 +172,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=sofia-rojas">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Noah Barnes" data-school="Vanderbilt University" data-sport="Baseball">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Noah Barnes" data-school="Vanderbilt University" data-sport="Baseball">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-noah-barnes-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-noah-barnes-card-title">Noah Barnes stylized illustration</title>
             <defs>
@@ -194,7 +194,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=noah-barnes">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Alia Thompson" data-school="LSU" data-sport="Track &amp; Field">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Alia Thompson" data-school="LSU" data-sport="Track &amp; Field">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-alia-thompson-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-alia-thompson-card-title">Alia Thompson stylized illustration</title>
             <defs>
@@ -216,7 +216,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=alia-thompson">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Darius Mason" data-school="University of Kansas" data-sport="Basketball">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Darius Mason" data-school="University of Kansas" data-sport="Basketball">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-darius-mason-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-darius-mason-card-title">Darius Mason stylized illustration</title>
             <defs>
@@ -238,7 +238,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=darius-mason">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Lena Park" data-school="Duke University" data-sport="Tennis">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Lena Park" data-school="Duke University" data-sport="Tennis">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-lena-park-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-lena-park-card-title">Lena Park stylized illustration</title>
             <defs>
@@ -260,7 +260,7 @@
             <a class="btn btn-ghost mt-3" href="athlete.html?id=lena-park">View details</a>
           </div>
         </article>
-        <article class="athlete-card" data-athlete-card data-name="Tyrese Jacobs" data-school="Villanova University" data-sport="Basketball">
+        <article class="athlete-card" data-observe data-animate="scale-in" data-athlete-card data-name="Tyrese Jacobs" data-school="Villanova University" data-sport="Basketball">
           <svg class="athlete-portrait" viewBox="0 0 400 300" role="img" aria-labelledby="portrait-tyrese-jacobs-card-title" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <title id="portrait-tyrese-jacobs-card-title">Tyrese Jacobs stylized illustration</title>
             <defs>
