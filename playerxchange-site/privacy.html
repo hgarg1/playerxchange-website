@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,13 +61,13 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="page-hero container" data-observe data-animate="fade-up">
       <h1>Privacy Policy</h1>
       <p>Last updated: July 2024. We believe athletes and fans deserve transparency about how their data is used.</p>
     </section>
-    <section class="container">
-      <nav class="table-of-contents" aria-label="Privacy contents">
+    <section class="container" data-observe data-animate="slide-left">
+      <nav class="table-of-contents" aria-label="Privacy contents" data-observe data-animate="fade-up">
         <h2 class="text-sm uppercase weight-medium">On this page</h2>
         <ol>
           <li><a href="#data-collection">Data we collect</a></li>
@@ -76,19 +76,19 @@
           <li><a href="#your-rights">Your rights</a></li>
         </ol>
       </nav>
-      <div class="legal-section" id="data-collection">
+      <div class="legal-section" id="data-collection" data-observe data-animate="rise">
         <h2>Data we collect</h2>
         <p>We collect information you provide directly (account info, athlete documents, compliance attestations) and data generated automatically (device metadata, wallet addresses, transaction hashes). We also ingest data from compliance partners to verify eligibility.</p>
       </div>
-      <div class="legal-section" id="data-use">
+      <div class="legal-section" id="data-use" data-observe data-animate="rise">
         <h2>How we use data</h2>
         <p>PlayerXChange uses personal data to operate the marketplace, power compliance checks, personalize perks, and communicate with you. Aggregated metrics help us improve products while keeping individual identities secure.</p>
       </div>
-      <div class="legal-section" id="data-sharing">
+      <div class="legal-section" id="data-sharing" data-observe data-animate="rise">
         <h2>When we share data</h2>
         <p>We share data with service providers (KYC/AML vendors, payment processors, fulfillment partners) under strict contracts. We may disclose data to comply with legal requests or to protect athlete safety.</p>
       </div>
-      <div class="legal-section" id="your-rights">
+      <div class="legal-section" id="your-rights" data-observe data-animate="rise">
         <h2>Your rights</h2>
         <p>You can request access, correction, deletion, or portability of your data by emailing privacy@playerxchange.com. We honor opt-outs for marketing communications and adhere to regional privacy laws.</p>
       </div>

@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="css/utilities.css" type="text/css">
   <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
-<body data-theme="dark">
+<body data-theme="dark" class="page-shell">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container navbar">
@@ -61,13 +61,13 @@
       </div>
     </div>
   </header>
-  <main id="main">
-    <section class="page-hero container">
+  <main id="main" class="page-main" data-ambient>
+    <section class="page-hero container" data-observe data-animate="fade-up">
       <h1>Let’s build the future of fan ownership</h1>
       <p>Drop your info and we’ll connect you with the right PlayerXChange lead—whether it’s compliance, partnerships, or athlete onboarding.</p>
     </section>
-    <section class="container">
-      <div class="card form-card">
+    <section class="container" data-observe data-animate="slide-right">
+      <div class="card form-card" data-observe data-animate="scale-in">
         <form data-contact-form novalidate>
           <div class="form-group">
             <label for="name">Full name</label>
@@ -86,7 +86,7 @@
           </div>
           <button class="btn btn-primary mt-6" type="submit">Submit</button>
         </form>
-        <div class="card mt-6 hidden" data-form-success role="status">
+        <div class="card mt-6 hidden" data-form-success role="status" data-observe data-animate="fade-up">
           <strong>Message received.</strong>
           <p class="mt-2 text-sm">Our team will get back within one business day.</p>
         </div>
