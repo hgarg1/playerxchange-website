@@ -187,7 +187,8 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(11,95,255,.65);outli
   opacity:.35;
   transform:rotate(-2deg);
   mix-blend-mode:screen;
-  transition:opacity var(--transition)
+  transition:opacity var(--transition);
+  pointer-events:none
 }
 
 .card::after{
@@ -198,7 +199,8 @@ a:focus-visible,button:focus-visible{outline:3px solid rgba(11,95,255,.65);outli
   background:linear-gradient(120deg,rgba(31,107,255,.16),transparent 60%);
   opacity:0;
   transition:opacity 420ms var(--ease-smooth);
-  mix-blend-mode:screen
+  mix-blend-mode:screen;
+  pointer-events:none
 }
 
 .card:hover{transform:translate3d(0,-8px,0) scale(1.01);box-shadow:var(--shadow-lg)}
@@ -445,7 +447,8 @@ t 1px),linear-gradient(0deg,rgba(123,136,168,.08) 1px,transparent 1px);backgroun
     radial-gradient(circle at 80% 80%,rgba(17,215,177,.2),transparent 65%);
   opacity:.45;
   mix-blend-mode:screen;
-  animation:ambientShift 42s ease-in-out infinite alternate
+  animation:ambientShift 42s ease-in-out infinite alternate;
+  pointer-events:none
 }
 .page-shell .card:hover::before,.page-shell .team-card:hover::before,.page-shell .athlete-card:hover::before,.page-shell .tab-panel:hover::before,.page-shell .timeline-step:hover::before,.page-shell .form-card:hover::before,.page-shell .accordion:hover::before,.page-shell .stat-card:hover::before,.page-shell .testimonial:hover::before{opacity:.65}
 
